@@ -1,0 +1,106 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.displayNone {
+  display: none;
+}
+.root {
+  width: 550px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.root .game-items {
+  height: 100%;
+  width: 100%;
+}
+.root .game-items .game-container {
+  height: 500px;
+  width: 500px;
+  margin: auto;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+}
+.root .game-items .game-container .cover {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(250, 235, 215, 0);
+  position: relative;
+  z-index: 111;
+  position: absolute;
+}
+.root .game-items .game-container .winer-class {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.747);
+  position: relative;
+  z-index: 1111;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: none;
+}
+
+.root .game-items .game-container .winer-class .header {
+  font-size: 50px;
+  margin: 10px;
+}
+.root .game-items .game-container .winer-class .win-tag {
+  font-size: 40px;
+  margin: 10px;
+}
+.root .game-items .game-container .winer-class .try-again {
+  font-size: 18px;
+  margin: 10px;
+}
+.root .game-items .game-container .winer-class .try-again:hover {
+  text-decoration: underline;
+  color: blueviolet;
+  cursor: pointer;
+}
+.root .game-items .game-container .items {
+  height: 32.333333%;
+  width: 32.333333%;
+  background-color: rgb(75, 72, 75);
+  margin: 0.5%;
+}
+.root .player {
+  min-height: 70px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.root .player .image {
+  height: 70px;
+  width: 70px;
+  background-color: azure;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+.root .player .user-name {
+  font-size: 30px;
+}
+.root .player .time {
+  font-size: 30px;
+  margin-left: 50px;
+}
+.root .player:nth-child(3) {
+  justify-content: flex-end;
+}
+.root .player:nth-child(3) .image {
+  order: 2;
+  margin-left: 20px;
+}
+.root .player:nth-child(3) .time {
+  order: -1;
+  margin-right: 50px;
+}

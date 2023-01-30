@@ -1,0 +1,197 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="{% static 'page/home/style/style.css' %}" />
+    <!-- <link rel="stylesheet" href="../static/page/home/style/style.css" /> -->
+  </head>
+  <body>
+    {{params|json_script:"params"}}
+    <div class="root">
+      <div class="item player">
+        <div class="image">
+          <img
+            src="{% static 'image/enemy.png' %}"
+            alt=""
+            height="100%"
+            width="100%"
+          />
+        </div>
+        <div class="user-name" id="otherName">Opponent</div>
+        <div class="time" id="opositeTime">20</div>
+      </div>
+      <div class="item game-items">
+        <div class="game-container">
+          <div class="cover" id="cover"></div>
+          <div class="winer-class" id="alert">
+            <div class="header" id="winer-name"></div>
+            <div class="win-tag" id="winer-tag">Winer</div>
+            <div class="try-again" onclick="reloadPage()">try again</div>
+          </div>
+          <div class="items clickBox">
+            <img
+              class="displayNone meSign"
+              src="{% static 'image/circle.png' %}"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+            <img
+              class="displayNone opposite"
+              src="{% static 'image/close.png' %}"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+          </div>
+          <div class="items clickBox">
+            <img
+              class="displayNone meSign"
+              src="{% static 'image/circle.png' %}"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+            <img
+              class="displayNone opposite"
+              src="{% static 'image/close.png' %}"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+          </div>
+          <div class="items clickBox">
+            <img
+              class="displayNone meSign"
+              src="{% static 'image/circle.png' %}"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+            <img
+              class="displayNone opposite"
+              src="{% static 'image/close.png' %}"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+          </div>
+          <div class="items clickBox">
+            <img
+              class="displayNone meSign"
+              src="{% static 'image/circle.png' %}"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+            <img
+              class="displayNone opposite"
+              src="{% static 'image/close.png' %}"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+          </div>
+          <div class="items clickBox">
+            <img
+              class="displayNone meSign"
+              src="{% static 'image/circle.png' %}"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+            <img
+              class="displayNone opposite"
+              src="{% static 'image/close.png' %}"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+          </div>
+          <div class="items clickBox">
+            <img
+              class="displayNone meSign"
+              src="{% static 'image/circle.png' %}"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+            <img
+              class="displayNone opposite"
+              src="{% static 'image/close.png' %}"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+          </div>
+          <div class="items clickBox">
+            <img
+              class="displayNone meSign"
+              src="{% static 'image/circle.png' %}"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+            <img
+              class="displayNone opposite"
+              src="{% static 'image/close.png' %}"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+          </div>
+          <div class="items clickBox">
+            <img
+              class="displayNone meSign"
+              src="{% static 'image/circle.png' %}"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+            <img
+              class="displayNone opposite"
+              src="{% static 'image/close.png' %}"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+          </div>
+          <div class="items clickBox">
+            <img
+              class="displayNone meSign"
+              src="{% static 'image/circle.png' %}"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+            <img
+              class="displayNone opposite"
+              src="{% static 'image/close.png' %}"
+              alt=""
+              height="100%"
+              width="100%"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="item player">
+        <div class="image">
+          <img
+            src="{% static 'image/gamer.png' %}"
+            alt=""
+            height="100%"
+            width="100%"
+          />
+        </div>
+        <div class="user-name" id="meName">ME</div>
+        <div class="time" id="meTime">20</div>
+      </div>
+    </div>
+    <!-- <script src="../static/page/home/scripts/home.js"></script> -->
+    <script src="{% static 'page/home/scripts/home.js' %}"></script>
+  </body>
+</html>
